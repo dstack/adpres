@@ -1,3 +1,4 @@
 module.exports = {
-  thumbURLHelper: require('./thumbURLHelper')
+  thumbURLHelper: require('./thumbURLHelper'),
+  titleCase: require('./titleCase')
 }

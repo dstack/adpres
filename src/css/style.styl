@@ -11,6 +11,8 @@ cPrimary   = #2196f3
 cSecondary = #009688
 cAccent    = #ff9800
 
+header-height = 65px
+
 *
   box-sizing border-box
 
@@ -23,6 +25,7 @@ body
   background linear-gradient(90deg, cPrimary 10%, cSecondary 90%)
   font-family 'Raleway', sans-serif
   color black
+  padding-top header-height
 
 footer
   background black
@@ -204,19 +207,30 @@ nav.top-nav
   background rgba(white,0.35)
   box-shadow 0, 0, 2px rgba(black,0.5)
   padding 8px 18px
-  position static
+  position fixed
+  width 100%
   top 0px
   left 0px
-  height 65px
+  height header-height
+  z-index 9
   img
-    height 49px
+    height (header-height - 16px)
+    margin-right 16px
   ul
     clearfix()
     li
       float left
       a
-        height 49px
+        height (header-height - 16px)
+        line-height (header-height - 16px)
         display inline-block
+        color white
+        text-decoration none
+        text-transform uppercase
+        padding 0px 12px
+        opacity 0.75
+        &:hover
+          opacity 1
 
 @media screen and (max-width: 600px)
 	.masthead
