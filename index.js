@@ -12,7 +12,7 @@ let helpers     = require('./src/_helpers')
 let args = process.argv.slice(2);
 
 const prodMetaData = {
-  siteURL: "http://dstack.github.io/adpres"
+  siteURL: "https://dstack.github.io/adpres"
 }
 
 let config = {
