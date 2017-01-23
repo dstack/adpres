@@ -1,0 +1,40 @@
+{
+  "name": "adpres",
+  "version": "0.0.1",
+  "description": "A directory of awesome developer presentations.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "concurrently": "^3.1.0",
+    "handlebars": "^4.0.6",
+    "metalsmith": "^2.3.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^1.7.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-stylus": "^2.0.1",
+    "metalsmith-tags": "^2.0.0",
+    "nib": "^1.1.2",
+    "watch": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js",
+    "build:prod": "node index.js --prod",
+    "live": "watch \"npm run build\" src",
+    "publish": "npm run build:prod && git add . && git commit -m \"Publishing Commit...\" && git subtree push --prefix public origin gh-pages && git push origin master",
+    "serve": "node sync.js",
+    "start": "concurrently \"npm run serve\" \"npm run live\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstack/adpres.git"
+  },
+  "author": "Drew Strickland <andrew.flagship@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dstack/adpres/issues"
+  },
+  "homepage": "http://dstack.github.io/adpres"
+}

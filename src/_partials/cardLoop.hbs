@@ -1,0 +1,22 @@
+<ul class="pres-list">
+  {{#each cards}}
+    <li class="card-ct">
+      <div class="card transition">
+        <h2 class="transition">
+          <a href="{{presURL}}" target="_blank">
+            {{this.title}}
+          </a>
+        </h2>
+        <h3>{{author}}</h3>
+        <p>
+          {{{contents}}}
+        </p>
+        <div class="cta-container transition">
+          <a href="{{presURL}}" target="_blank" class="cta">View Presentation</a>
+        </div>
+        <div class="card_circle transition" style="background: url('{{thumbURLHelper ../siteURL thumbURL}}') no-repeat center bottom;"></div>
+        {{> tagList tags=tags siteURL=../siteURL }}
+      </div>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Presentations Tagged {{tag}}</title>
+    <link href="{{siteURL}}/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    {{> header }}
+
+    <div class="masthead">
+      Presentations Tagged: <b>{{tag}}</b>
+    </div>
+    {{> cardLoop cards=pagination.files siteURL=siteURL }}
+    {{> footer}}
+  </body>
+</html>

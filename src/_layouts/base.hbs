@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link href="{{siteURL}}/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    {{> header }}
+
+    {{{contents}}}
+    {{#if isHome}}
+      {{> cardLoop cards=collections.pres siteURL=siteURL }}
+    {{/if}}
+    {{> footer}}
+  </body>
+</html>
