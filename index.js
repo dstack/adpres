@@ -21,7 +21,8 @@ let config = {
   description: "A collection of presentations designed to make you a better developer.",
   generatorName: "Metalsmith",
   generatorURL: "http://metalsmith.io/",
-  currentYear: new Date().getFullYear()
+  currentYear: new Date().getFullYear(),
+  contribs: require('./data/contributors.js')
 };
 
 if(args.indexOf('--prod') > -1){

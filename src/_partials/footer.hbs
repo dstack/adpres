@@ -1,5 +1,22 @@
 <footer>
-  footer goes here
+  <div class="footer-about">
+    <h6><a name="about">About Adpres</a></h6>
+    Adpres was started out of a desire to help developers be their best.  While access to learning
+    what code to write has never been easier, learning why to program that way, or how to think
+    through specific problems has never been harder.
+  </div>
 
-  {{currentYear}}
+  <div class="footer-contributers">
+    <h6>Contributors</h6>
+    <ul class="contrib-list">
+      {{# each contribs}}
+        <li><a href="{{link}}" target="_blank">{{name}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="footer-legal">
+    <h6>&nbsp;</h6>
+    &copy; {{currentYear}} adpres
+  </div>
 </footer>
