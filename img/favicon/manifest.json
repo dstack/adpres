@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Presentations Tagged admin</title>
+    <title></title>
     <link href="https://dstack.github.io/adpres/css/style.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="152x152" href="https://dstack.github.io/adpres/img/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="https://dstack.github.io/adpres/img/favicon/favicon-32x32.png" sizes="32x32" />
@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#2196f3" />
   </head>
   <body>
+
     <nav class="top-nav">
       <ul>
         <li>
@@ -28,41 +29,19 @@
       </ul>
     </nav>
 
-    <div class="masthead">
-      Presentations Tagged: <b>admin</b>
-    </div>
-    <ul class="pres-list">
-        <li class="card-ct">
-          <div class="card transition">
-            <h2 class="transition">
-              <a href="https://vimeo.com/146524997" target="_blank">
-                It Was Never Going to Work, So Let’s Have Some Tea
-              </a>
-            </h2>
-            <h3>James Mickens</h3>
-            <p>
-              <p>It’s difficult to administer large systems. In this talk, Mickens will argue that we should just give up.</p>
-    
-            </p>
-            <div class="cta-container transition">
-              <a href="https://vimeo.com/146524997" target="_blank" class="cta">View Presentation</a>
-            </div>
-            <div class="card_circle transition" style="background: url('https://i.vimeocdn.com/video/544948341_640.webp') no-repeat center bottom;"></div>
-            <ul class="tag-list">
-              <li>Tags:</li>
-                <li>
-                  <a href="https://dstack.github.io/adpres/tags/comedy.html">Comedy</a>
-                </li>
-                <li>
-                  <a href="https://dstack.github.io/adpres/tags/admin.html">Admin</a>
-                </li>
-                <li>
-                  <a href="https://dstack.github.io/adpres/tags/large-systems.html">Large Systems</a>
-                </li>
-            </ul>
-          </div>
-        </li>
-    </ul>
+    {
+    "name": "",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
     <footer>
       <div class="footer-about">
         <h6><a name="about">About Adpres</a></h6>
