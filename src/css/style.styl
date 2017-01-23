@@ -3,11 +3,13 @@
 
 global-reset()
 
-white = #fff
-black = #263238
+white     = #fff
+off-white = #eceff1
+black     = #263238
 
-cPrimary = #00aaee
-cSecondary = #dd2476
+cPrimary   = #2196f3
+cSecondary = #009688
+cAccent    = #ff9800
 
 *
   box-sizing border-box
@@ -32,7 +34,7 @@ footer
   line-height 1.25em
   clearfix()
   a[href]
-    color cSecondary
+    color cAccent
     text-decoration none
   h6
     text-transform uppercase
@@ -83,16 +85,16 @@ footer
 .card
   width 350px
   height 350px
-  background #eceff1
-  box-shadow 0px 0px 10px 2px rgba(0,0,0,0.3)
+  background off-white
+  box-shadow 0px 0px 10px 2px rgba(black,0.3)
   position absolute
   overflow hidden
   z-index 1
   a
     text-decoration none
-    color #3487f7
+    color cPrimary
   &:hover
-    background #fff
+    background white
     height 500px
     z-index 5
     .cta-container
@@ -103,7 +105,7 @@ footer
       border-radius 0
       margin-top -130px
     h2
-      background #3487f7
+      background cSecondary
       margin-top 100px
       padding 5px
       small, a
@@ -118,21 +120,21 @@ footer
     bottom 230px
     left 0px
     width 100%
-    background rgba(0,0,0,0.35)
+    background rgba(black,0.35)
     opacity 0
     li
       float left
       margin 8px 3px
     a
       background cSecondary
-      color #fff
+      color white
       display inline-block
       padding 3px 5px
       margin-top -3px
       border-radius 4px
   .card_circle
     background url('img/blank.gif') no-repeat center bottom
-    background-color #3487f7
+    background-color cPrimary
     background-size cover
     border-radius 50%
     height 400px
@@ -160,7 +162,7 @@ footer
     width 100%
     z-index 3
   p
-    color rgba(0,0,0,.6)
+    color rgba(black,.8)
     font-size 100%
     font-weight normal
     margin-top 200px
@@ -179,9 +181,9 @@ footer
 
   .cta
     background-clip padding-box
-    border 2px solid #3487f7
+    border 2px solid cPrimary
     border-radius 2px
-    color #3487f7
+    color cPrimary
     display inline-block
     font-size 17px
     font-weight 400
@@ -194,13 +196,13 @@ footer
     text-transform uppercase
     transition 0.2s ease-out
     &:hover
-      background-color #3487f7
+      background-color cPrimary
       box-shadow 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-      color #fff
+      color white
 
 nav.top-nav
-  background rgba(255,255,255,0.35)
-  box-shadow 0, 0, 2px rgba(0,0,0,0.5)
+  background rgba(white,0.35)
+  box-shadow 0, 0, 2px rgba(black,0.5)
   padding 8px 18px
   position static
   top 0px
@@ -208,6 +210,13 @@ nav.top-nav
   height 65px
   img
     height 49px
+  ul
+    clearfix()
+    li
+      float left
+      a
+        height 49px
+        display inline-block
 
 @media screen and (max-width: 600px)
 	.masthead
